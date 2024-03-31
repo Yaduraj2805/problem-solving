@@ -1,0 +1,7 @@
+=>Use BFS approach to find shortest path like we solve for graph problems. You can think of adjacent cells with value = 0 having an undirected edge between them.
+=>Apply BFS and update counter at everly level.
+=>To track levels I have used nodesPushed. It is equal to number of nodes in current level.
+=>If you are able to reach (n-1, n-1) return its level otherwise return -1.
+=>Little Optimization : Rather than keeping visited vector, after we have pushed a node in the queue make its value in grid equal to 1. This would make it unavailable to process next time we encounter it. However this method will corrupt the memory.
+=>DP will not work here because the way we traverse the matrix in DP will not lead to formulation of correct solution or rather the optimal path. However, BFS will lead to an optimal path.
+=>We can also get our answer by DFS but it would be computationaly more expensive and might give TLE on large inputs.
