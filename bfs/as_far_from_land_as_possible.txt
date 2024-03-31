@@ -2,4 +2,4 @@ a. Start from land 1 to all the possible water 0
 b. Place all the Lands into the queue which will be marked as level 0
 c. Use BFS to calculate all the possible water using all the elements in queue and increase the level number.
 d. Repeat the same process until each water 0 is covered.
-e. Return level-1 because at the final level the size of queue will be 1 which represents the final position at which we can reach but the queue will also process this and increase a level (which is not required) so we return level-1.
+e. Return level-1 because at the final level the size of queue will be 1 which represents the final position at which we can reach but the         queue will also process this and increase a level (which is not required) so we return level-1.
